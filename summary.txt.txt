@@ -1,0 +1,41 @@
+CoronaTime
+Kevin Chen, May Xiao, Andrew Zhu
+
+CoronaTime is a tool that people can use to understand the spread of disease.
+It will feature a UI that shows a population of people moving around over time.
+Each person will be a certain color to indicate their exposure to the disease -
+healthy, sick, or even infected but asymptomatic. There will be parameters that
+the user can input in order to modify the behavior of the population and virus,
+testing to see how different characteristics impact the spread of disease.
+A graph will also be created to characterize the spread of the disease.
+
+Categories:
+Implementation Project
+Social Networks, in the Schelling Model Visualization
+Graph and Graph Algorithms, in the underlying structure to track spread of the virus
+
+May Implemented:
+- User input methods
+- Translated the paper on Coronavirus Policies to a program implementation
+- Developed code that executes 3 different policies on how to handle coronavirus
+  - Evolve implements policy by taking into consideration socialDistance
+    (socialFrequency), outside contact rates, household contact rates, or no
+    contact (quarantine), when determining how people move across the map
+  - Created ways to reflect quarantining of individuals and families
+- Created a way to run iterations (modifiable) of updating the population with
+  the evolve() method and displaying the resulting visualizer
+- Created a day counter display in the UI that updates the day for every 12
+  loops of evolve(); - this assumes each day has 12 movements available
+
+Kevin Implemented:
+- Visualizer based on the Schelling Model, edited with a timelapse view
+- Implemented error checking on user inputs
+- Went through each class and refactored into helper methods for increased readability
+
+Andrew Implemented:
+- Implemented the initialization of the population.
+- Implemented the underlying graph structure that represents the spread of
+  disease among the population
+- Implemented the graph algorithms that calculates the number of connected
+  components and tallies edge types.
+- Implemented random movement of the population as one of the movement methods
