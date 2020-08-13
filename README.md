@@ -1,5 +1,5 @@
 # Coronatime
-## Created with Kevin Chen and Andrew Zhu
+### Created with Kevin Chen and Andrew Zhu
 
 CoronaTime is a tool that people can use to understand the spread of disease.
 It will feature a UI that shows a population of people moving around over time.
