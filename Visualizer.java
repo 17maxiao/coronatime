@@ -131,7 +131,14 @@ public class Visualizer {
 			g.fillRect(0, 0, (xDimension) * scale - 1,
 					(yDimension) * scale - 1);
 			//draws grid lines
-			g.setColor(Color.BLACK);
+			g.setColor(Color.LIGHT_GRAY);
+			for (int i = 0; i < (yDimension) * scale + 20; i+=20) {
+			    g.drawLine(0, i, (xDimension) * scale - 1, i);
+			}
+			for (int i = 0; i < (xDimension) * scale + 20; i+=20) {
+                g.drawLine(i, 0, i, (yDimension) * scale - 1); 
+			}
+			
 			g.drawRect(0, 0, (xDimension) * scale - 1,
 					(yDimension) * scale - 1);
 			Set<Integer> populationList = population.keySet();
@@ -152,11 +159,11 @@ public class Visualizer {
 					} else if (stat == 3) { // Recovered/Immune!
 						g.setColor(Color.BLUE);
 					} else if (stat == 4) { // Dead :(
-						g.setColor(Color.BLACK);
+						g.setColor(Color.LIGHT_GRAY);
 					} else {
-						g.setColor(Color.LIGHT_GRAY); //person has no status?? -mx
+						g.setColor(Color.DARK_GRAY); //person has no status?? -mx
 					}
-					g.fillOval(x * scale, y * scale, scale - 1, scale - 1);
+					g.fillOval(x * scale, y * scale, scale + 3, scale + 3);
 				}
 			}
 			
