@@ -29,7 +29,7 @@ console. If an invalid number is entered, the user will be asked to enter the nu
 invalid character is entered, the user will be notified but will have to restart the program. Below
 are the parameters that a user must enter something along the lines of:
 
-![](images/input.jpg)
+![](images/input.JPG)
 
 
 ## Simulation Length
@@ -126,14 +126,14 @@ Once the simulation starts, the Visualizer will display a timelapse view of the 
 progressing. The simulation cycles roughly once every 0.05 seconds, with 12 cycles (0.6
 seconds) equalling a day.
 
-![](images/output.jpg)
+![](images/output.JPG)
 
 While the simulation is running, a graph is also being created in the backend. The graph has
 nodes for every single person and tracks the spread of the infection over time. More specifically,
 an edge is drawn pointing from the infector to the infectee each time someone new is infected.
 At the end of the simulation, BFS is run on the graph and a few diagnostics are printed out, as shown below: 
 
-![](images/output_data.jpg)
+![](images/output_data.JPG)
 
 * Clusters: this metric counts the number of connected components in the graph. It can
 be interpreted as how many sources of infections. Thus, a smaller number means a
